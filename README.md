@@ -171,7 +171,7 @@ The `exercises` folder contains five progressive activities covering data explor
 
 ## Quick Docker commands
 
-The detailed explanation is in the [Student Docker Quick Start Guide](docs/STUDENT_DOCKER_QUICKSTART.md). Experienced Docker users can use this condensed sequence:
+The detailed explanation is in the [Student Docker Quick Start Guide]`STUDENT_DOCKER_QUICKSTART.md`. Experienced Docker users can use this condensed sequence:
 
 ```powershell
 Set-Location C:\GitHub\semiconductor-ai-agent-workshop
