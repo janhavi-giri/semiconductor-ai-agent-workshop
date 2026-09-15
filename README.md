@@ -43,7 +43,7 @@ The language model coordinates the workflow and selects tools. Python functions 
 
 New to Docker or the workshop repository?
 
-👉 Follow the [Student Docker QuickTART.md
+👉 Follow the `STUDENT_DOCKER_QUICKSTART.md`
 
 The guide covers:
 
