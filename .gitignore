@@ -4,3 +4,6 @@ __pycache__/
 .venv/
 venv/
 .ipynb_checkpoints/
+*.arti*actvalidatefixed
+*.artifactvalidat*pass
+*.orig.pptx
