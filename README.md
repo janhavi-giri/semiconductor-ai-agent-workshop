@@ -10,6 +10,7 @@ A public, vendor-neutral workshop for learning Agentic AI with synthetic semicon
 - Build a ReAct agent using a public OpenAI-compatible provider.
 - Launch a Gradio UI locally or with Docker.
 
+
 ## Local setup
 
 ```powershell
@@ -25,6 +26,8 @@ python run_ui.py
 
 Open [the local workshop UI](http://localhost:7860).
 
+## Student setup
+Follow the STUDENT_DOCKER_QUICKSTART.md to build the image, run the container, and launch the workshop UI.
 ## Docker setup
 
 ```powershell
