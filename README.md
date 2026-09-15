@@ -43,7 +43,7 @@ The language model coordinates the workflow and selects tools. Python functions 
 
 New to Docker or the workshop repository?
 
-Follow the [Student Docker Quick Start Guide](docs/STUDENT_DOCKER_QUICKSTART.md).
+👉 Follow the [Student Docker QuickTART.md
 
 The guide covers:
 
@@ -134,8 +134,7 @@ semiconductor-ai-agent-workshop/
 ├── docker/
 │   ├── Dockerfile
 │   └── docker-compose.yml
-├── docs/
-│   └── STUDENT_DOCKER_QUICKSTART.md
+├── STUDENT_DOCKER_QUICKSTART.md
 └── tests/
     └── test_clustering.py
 ```
