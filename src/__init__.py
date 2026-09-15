@@ -1,0 +1,1 @@
+"""Educational semiconductor AI workshop."""

@@ -1,0 +1,24 @@
+{
+  "tool": "artifact-validator",
+  "schemaVersion": "2.0",
+  "validatorVersion": "3.1.0",
+  "result": "valid",
+  "exitCode": 0,
+  "input": {
+    "path": "/tmp/workshop/slides/Agentic_AI_Workshop.pptx",
+    "sha256": "8db764fe70a4a1542d781b548eba9c29060a4c2210a50445f8cb6d7872156ec9",
+    "sizeBytes": 25465,
+    "kind": "pptx"
+  },
+  "output": null,
+  "backup": null,
+  "repair": null,
+  "packageError": null,
+  "summary": {
+    "errorCount": 0,
+    "warningCount": 0,
+    "repairableCount": 0,
+    "issueCount": 0
+  },
+  "issues": []
+}

@@ -1,0 +1,9 @@
+services:
+  workshop:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "7860:7860"
+    env_file:
+      - ../.env

@@ -1,0 +1,11 @@
+.git
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+notebooks/
+slides/
+exercises/
+solutions/
+tests/
