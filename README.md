@@ -171,7 +171,7 @@ The `exercises` folder contains five progressive activities covering data explor
 
 
 
-\## Why is there a docker folder?
+## Why is there a docker folder?
 
  
 
