@@ -2,6 +2,8 @@
 
 A public, vendor-neutral workshop for learning Agentic AI through synthetic semiconductor wafer analytics.
 
+![semiconductor-wafer-clustering-agent](https://github.com/janhavi-giri/semiconductor-ai-agent-workshop/blob/main/semi-demo.gif)
+
 This repository combines synthetic data generation, clustering, deterministic analytical tools, a ReAct agent, a Gradio interface, guided notebooks, hands-on exercises, and Docker-based deployment.
 
 > \*\*Educational use only:\*\* The supplied wafer data is synthetic and does not represent measurements from an actual semiconductor fabrication facility.
