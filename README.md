@@ -4,20 +4,20 @@ A public, vendor-neutral workshop for learning Agentic AI through synthetic semi
 
 This repository combines synthetic data generation, clustering, deterministic analytical tools, a ReAct agent, a Gradio interface, guided notebooks, hands-on exercises, and Docker-based deployment.
 
-> **Educational use only:** The supplied wafer data is synthetic and does not represent measurements from an actual semiconductor fabrication facility.
+> \*\*Educational use only:\*\* The supplied wafer data is synthetic and does not represent measurements from an actual semiconductor fabrication facility.
 
 ## Learning outcomes
 
 By completing the workshop, students will be able to:
 
-- Generate reproducible synthetic wafer measurements.
-- Compare K-means, DBSCAN, and hierarchical clustering.
-- Standardize process features and evaluate clusters with silhouette score.
-- Wrap deterministic analytics as tools for an AI agent.
-- Build a ReAct agent using a public OpenAI-compatible provider.
-- Launch and use a Gradio web interface.
-- Package and run the application with Docker.
-- Keep API credentials outside source code and Git.
+* Generate reproducible synthetic wafer measurements.
+* Compare K-means, DBSCAN, and hierarchical clustering.
+* Standardize process features and evaluate clusters with silhouette score.
+* Wrap deterministic analytics as tools for an AI agent.
+* Build a ReAct agent using a public OpenAI-compatible provider.
+* Launch and use a Gradio web interface.
+* Package and run the application with Docker.
+* Keep API credentials outside source code and Git.
 
 ## Architecture
 
@@ -43,19 +43,19 @@ The language model coordinates the workflow and selects tools. Python functions 
 
 New to Docker or the workshop repository?
 
-👉 Follow the `STUDENT_DOCKER_QUICKSTART.md`
+👉 Follow the `STUDENT\_DOCKER\_QUICKSTART.md`
 
 The guide covers:
 
-- Installing Docker Desktop and Git.
-- Cloning the repository.
-- Configuring a public OpenAI-compatible provider.
-- Building the Docker image.
-- Running and verifying the container.
-- Initializing the agent.
-- Generating synthetic wafer data.
-- Using Chat and Visualize.
-- Troubleshooting common setup issues.
+* Installing Docker Desktop and Git.
+* Cloning the repository.
+* Configuring a public OpenAI-compatible provider.
+* Building the Docker image.
+* Running and verifying the container.
+* Initializing the agent.
+* Generating synthetic wafer data.
+* Using Chat and Visualize.
+* Troubleshooting common setup issues.
 
 ## Public provider configuration
 
@@ -69,19 +69,19 @@ notepad .env
 For standard OpenAI, configure:
 
 ```text
-OPENAI_API_KEY=replace-with-your-own-key
-OPENAI_MODEL=gpt-4o-mini
-OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI\_API\_KEY=replace-with-your-own-key
+OPENAI\_MODEL=gpt-4o-mini
+OPENAI\_BASE\_URL=https://api.openai.com/v1
 ```
 
 For another public OpenAI-compatible provider, use the model name and base URL documented by that provider.
 
 ### Protect your credentials
 
-- Do not commit `.env`.
-- Do not place API keys in source code, notebooks, screenshots, issues, or documentation.
-- Use a personal or institution-approved key.
-- Rotate a key immediately if it is exposed.
+* Do not commit `.env`.
+* Do not place API keys in source code, notebooks, screenshots, issues, or documentation.
+* Use a personal or institution-approved key.
+* Rotate a key immediately if it is exposed.
 
 Verify that `.env` is ignored:
 
@@ -102,82 +102,96 @@ The second command should produce no output.
 ```text
 semiconductor-ai-agent-workshop/
 ├── README.md
-├── WORKSHOP_GUIDE.md
+├── WORKSHOP\_GUIDE.md
 ├── SECURITY.md
 ├── LICENSE
 ├── requirements.txt
 ├── .env.example
-├── run_ui.py
+├── run\_ui.py
 ├── src/
 │   ├── agent.py
 │   ├── clustering.py
-│   ├── synthetic_data.py
+│   ├── synthetic\_data.py
 │   ├── tools.py
 │   └── ui.py
 ├── data/
-│   └── synthetic_wafer_data.csv
+│   └── synthetic\_wafer\_data.csv
 ├── notebooks/
-│   ├── 01_generate_dataset.ipynb
-│   ├── 02_clustering.ipynb
-│   ├── 03_agent_tools.ipynb
-│   └── 04_gradio_interface.ipynb
+│   ├── 01\_generate\_dataset.ipynb
+│   ├── 02\_clustering.ipynb
+│   ├── 03\_agent\_tools.ipynb
+│   └── 04\_gradio\_interface.ipynb
 ├── exercises/
-│   ├── 01_data_exploration.md
-│   ├── 02_clustering.md
-│   ├── 03_build_a_tool.md
-│   ├── 04_agent_extension.md
-│   └── 05_container_and_demo.md
+│   ├── 01\_data\_exploration.md
+│   ├── 02\_clustering.md
+│   ├── 03\_build\_a\_tool.md
+│   ├── 04\_agent\_extension.md
+│   └── 05\_container\_and\_demo.md
 ├── solutions/
-│   └── 03_build_a_tool_solution.py
+│   └── 03\_build\_a\_tool\_solution.py
 ├── slides/
-│   └── Agentic_AI_Workshop.pptx
+│   └── Agentic\_AI\_Workshop.pptx
 ├── docker/
 │   ├── Dockerfile
 │   └── docker-compose.yml
-├── STUDENT_DOCKER_QUICKSTART.md
+├── STUDENT\_DOCKER\_QUICKSTART.md
 └── tests/
-    └── test_clustering.py
+    └── test\_clustering.py
 ```
 
 ## Workshop sequence
 
-### 1. Generate synthetic data
+### 1\. Generate synthetic data
 
-Use `src/synthetic_data.py` or the first notebook to generate a reproducible dataset containing wafer yield, defect density, temperature, pressure, process time, and thickness measurements.
+Use `src/synthetic\_data.py` or the first notebook to generate a reproducible dataset containing wafer yield, defect density, temperature, pressure, process time, and thickness measurements.
 
-### 2. Explore clustering
+### 2\. Explore clustering
 
 Use `src/clustering.py` and the second notebook to compare:
 
-- K-means
-- DBSCAN
-- Hierarchical clustering
+* K-means
+* DBSCAN
+* Hierarchical clustering
 
-### 3. Work with deterministic tools
+### 3\. Work with deterministic tools
 
 Use `src/tools.py` and the third notebook to inspect the dataset, evaluate candidate cluster counts, apply K-means, and summarize cluster characteristics.
 
-### 4. Run the agent
+### 4\. Run the agent
 
 Use `src/agent.py` to connect the tools to a ReAct agent. The agent should call tools for computation and explain that the data is synthetic.
 
-### 5. Use the web interface
+### 5\. Use the web interface
 
-Use `src/ui.py` and `run_ui.py` to initialize the agent, generate data, ask analytical questions, and create a PCA cluster visualization.
+Use `src/ui.py` and `run\_ui.py` to initialize the agent, generate data, ask analytical questions, and create a PCA cluster visualization.
 
-### 6. Complete the exercises
+### 6\. Complete the exercises
 
 The `exercises` folder contains five progressive activities covering data exploration, clustering, tool creation, agent extension, and Docker deployment.
 
+
+
+\## Why is there a docker folder?
+
+ 
+
+The `docker` folder contains the files required to package the workshop as a Docker container.
+
+ 
+
+Docker gives every student the same software environment regardless of operating system, making the workshop easier to run and reproduce.
+
+
+
 ## Quick Docker commands
 
-The detailed explanation is in the [Student Docker Quick Start Guide]`STUDENT_DOCKER_QUICKSTART.md`. Experienced Docker users can use this condensed sequence:
+The detailed explanation is in the \[Student Docker Quick Start Guide]`STUDENT\_DOCKER\_QUICKSTART.md`. Experienced Docker users can use this condensed sequence:
 
 ```powershell
-Set-Location C:\GitHub\semiconductor-ai-agent-workshop
+Set-Location C:\\GitHub\\semiconductor-ai-agent-workshop
 Copy-Item -Path .env.example -Destination .env
 notepad .env
-docker build --tag semiconductor-ai-agent-workshop --file docker\Dockerfile .
+docker build --tag semiconductor-ai-agent-workshop --file docker\\Dockerfile .
 docker rm --force semiconductor-ai-workshop
 docker run --name semiconductor-ai-workshop --publish 7860:7860 --env-file .env semiconductor-ai-agent-workshop
 ```
@@ -211,9 +225,9 @@ Summarize the characteristics of each cluster.
 Create a Python environment and install the dependencies before running the tests:
 
 ```powershell
-Set-Location C:\GitHub\semiconductor-ai-agent-workshop
+Set-Location C:\\GitHub\\semiconductor-ai-agent-workshop
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\\.venv\\Scripts\\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python -m pytest -q
@@ -221,11 +235,11 @@ python -m pytest -q
 
 ## Instructor resources
 
-- `WORKSHOP_GUIDE.md` provides a suggested teaching sequence.
-- `slides/Agentic_AI_Workshop.pptx` provides the workshop presentation.
-- `notebooks` provides guided demonstrations.
-- `exercises` provides student assignments.
-- `solutions` provides instructor reference material.
+* `WORKSHOP\_GUIDE.md` provides a suggested teaching sequence.
+* `slides/Agentic\_AI\_Workshop.pptx` provides the workshop presentation.
+* `notebooks` provides guided demonstrations.
+* `exercises` provides student assignments.
+* `solutions` provides instructor reference material.
 
 ## Security and responsible use
 
@@ -233,11 +247,11 @@ Review `SECURITY.md` before publishing changes or using the repository in a clas
 
 Key requirements:
 
-- Use synthetic data for public demonstrations.
-- Do not commit API keys or `.env`.
-- Do not add private, proprietary, or personally identifiable data.
-- Keep TLS certificate verification enabled.
-- Review staged changes before every commit.
+* Use synthetic data for public demonstrations.
+* Do not commit API keys or `.env`.
+* Do not add private, proprietary, or personally identifiable data.
+* Keep TLS certificate verification enabled.
+* Review staged changes before every commit.
 
 ```powershell
 git status --short
@@ -247,3 +261,4 @@ git diff --cached
 ## License
 
 This workshop is provided under the MIT License. See `LICENSE` for details.
+
