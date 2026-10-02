@@ -8,6 +8,25 @@ This repository combines synthetic data generation, clustering, deterministic an
 
 > \*\*Educational use only:\*\* The supplied wafer data is synthetic and does not represent measurements from an actual semiconductor fabrication facility.
 
+## Support and Citation
+
+If you find this workshop useful, please ⭐ star this repository
+to support the project and help others discover it!
+
+If you use or adapt the code, notebooks, or workshop materials
+in your research, teaching, or projects, please cite:
+
+Giri, J. (2026). *Semiconductor AI Agent Workshop*.
+GitHub. https://github.com/janhavi-giri/semiconductor-ai-agent-workshop
+
+### BibTeX
+
+@misc{giri2026semiconductorai,
+  author = {Giri, Janhavi},
+  title = {Semiconductor AI Agent Workshop},
+  year = {2026},
+  howpublished = {\url{https://github.com/janhavi-giri/semiconductor-ai-agent-workshop}}
+}
 ## Learning outcomes
 
 By completing the workshop, students will be able to:
